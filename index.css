@@ -1,0 +1,102 @@
+body,html{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.cards{
+  display: grid;
+  width: 90vw;
+  margin:10px 100px;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.card{
+  border: .2rem solid black;
+  height: 160px;
+  width: 180px;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+  font-size: 100px;
+  display: flex;
+  background-image: url("./mark.jpg");
+  background-position: center;
+  background-size: cover;
+
+  align-items: center;
+  justify-content: center;
+}
+.cards div:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 4px 3px rgb(194, 194, 194);
+}
+.selected{
+  border: .2rem solid rgb(238, 255, 0);
+}
+.toggle{
+  transform: rotate(90deg);
+  background-repeat: no-repeat;
+
+  transform: scaleX(-1);
+  /* border: .1rem solid black; */
+  /* height: 200px;
+  width: 180px; */
+  font-size: 20px;
+  /* background-image: url("./images/img7.jpg"); */
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+}
+.matched{
+  background-color: aqua;
+}
+
+#moves{
+  font-size: 40px;
+  margin: 10px;
+}
+.display{
+  box-shadow: 1px 1px 2px 2px rgb(171, 162, 162);
+  margin-top: 200px;
+  margin-right: 100px;
+  border-radius: 10px;
+  height: 200px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+}
+.display span{
+  margin: 10px;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#start{
+  
+  border-radius: 10px;
+  background-color: antiquewhite;
+  height: 40px;
+  width:100px;
+  font-weight: bold;
+}
+#start:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+#timer{
+  font-size: 40px;
+  margin-left: 10px;
+}
